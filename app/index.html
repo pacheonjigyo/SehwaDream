@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>세화축산</title>
+
+    <meta name="description" content="세화축산" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:type" content="세화축산" />
+    <meta property="og:title" content="세화축산" />
+    <meta property="og:description" content="세화축산" />
+    <meta property="og:image" content="http://sehwadream.com/favicon.ico" />
+    <meta property="og:url" content="http://sehwadream.com/" />
+
+    <meta name="theme-color" content="#fafafa" />
+    <meta
+      name="naver-site-verification"
+      content="f2c0bcecaef2bd058c3e919390b372afc099dad5"
+    />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/site.manifest" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <script>
+      (function () {
+        var w = window;
+        if (w.ChannelIO) {
+          return w.console.error("ChannelIO script included twice.");
+        }
+        var ch = function () {
+          ch.c(arguments);
+        };
+        ch.q = [];
+        ch.c = function (args) {
+          ch.q.push(args);
+        };
+        w.ChannelIO = ch;
+        function l() {
+          if (w.ChannelIOInitialized) {
+            return;
+          }
+          w.ChannelIOInitialized = true;
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js";
+          var x = document.getElementsByTagName("script")[0];
+          if (x.parentNode) {
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        if (document.readyState === "complete") {
+          l();
+        } else {
+          w.addEventListener("DOMContentLoaded", l);
+          w.addEventListener("load", l);
+        }
+      })();
+
+      ChannelIO("boot", {
+        pluginKey: "93c0556f-b4a8-449c-a847-a5c6798f3b9c",
+        customLauncherSelector: "#custom-button",
+        hideChannelButtonOnBoot: true,
+      });
+    </script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <canvas id="svgCanvas" style="display: none"></canvas>
+
+    <div id="root"></div>
+    <div id="toastContainer"></div>
+
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

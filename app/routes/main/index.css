@@ -1,0 +1,107 @@
+:root {
+  --swiper-theme-color: #2d2d2d;
+
+  --swiper-navigation-size: 40px;
+
+  --swiper-pagination-bullet-color: white;
+  --swiper-pagination-bullet-color-active: white;
+
+  --swiper-pagination-bullet-size: 20px;
+  --swiper-pagination-margin-size: 40px;
+}
+
+.swiper-slide {
+  background: #f1f1f1;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-size);
+  height: var(--swiper-pagination-bullet-size);
+
+  background: var(--swiper-pagination-bullet-color);
+
+  margin: var(--swiper-pagination-bullet-size)
+    var(--swiper-pagination-margin-size) !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: var(--swiper-pagination-bullet-size);
+  height: var(--swiper-pagination-bullet-size);
+  background: var(--swiper-pagination-bullet-color-active);
+
+  margin: var(--swiper-pagination-bullet-size)
+    var(--swiper-pagination-margin-size) !important;
+}
+
+.step {
+  transition: width 1s;
+}
+
+.active {
+}
+
+#root
+  > div.MuiBox-root.css-j7qwjs
+  > div
+  > div
+  > div
+  > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical
+  > span:nth-child(1) {
+  position: relative;
+  padding-left: 1.25em;
+  /* opacity: 1 !important; */
+  background: transparent !important;
+}
+
+#root
+  > div.MuiBox-root.css-q6ziix
+  > div
+  > div
+  > div
+  > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical
+  > span:nth-child(1) {
+  position: relative;
+  padding-left: 1.25em;
+  /* opacity: 1 !important; */
+  background: transparent !important;
+}
+
+#root
+  > div.MuiBox-root.css-j7qwjs
+  > div
+  > div
+  > div
+  > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical
+  > span:nth-child(1):before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-100%, -50%);
+  width: 0.6em;
+  height: 0.1em;
+  background: var(--swiper-pagination-bullet-color-active);
+  box-shadow: 0 0.2em 0 0 var(--swiper-pagination-bullet-color-active),
+    0 0.4em 0 0 var(--swiper-pagination-bullet-color-active);
+  opacity: 1 !important;
+}
+
+#root
+  > div.MuiBox-root.css-q6ziix
+  > div
+  > div
+  > div
+  > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical
+  > span:nth-child(1):before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  width: 1.2em;
+  height: 0.2em;
+  background: var(--swiper-pagination-bullet-color-active);
+  box-shadow: 0 0.4em 0 0 var(--swiper-pagination-bullet-color-active),
+    0 0.8em 0 0 var(--swiper-pagination-bullet-color-active);
+  opacity: 1 !important;
+}
